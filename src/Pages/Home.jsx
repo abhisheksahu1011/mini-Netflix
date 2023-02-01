@@ -6,7 +6,7 @@ import { movie_Data } from '../Data'
 
 we can use forEach, filter, reduce */
 
-const Home = () => {
+export default Home () {
   const [name,setname] = useState("");
 
   const printing=(e)=>{
@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
   <>
-        <div className='d-flex justify-content-center flex-column'>
+
       
       <input className='w-25 m-auto mt-3'  type="text" onChange={(event)=>{printing(event)}}/>
     
@@ -39,10 +39,8 @@ const Home = () => {
   
         </div>
   
-      </div>
   </>    
 
   )
 }
 
-export default Home
